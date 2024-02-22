@@ -1,6 +1,7 @@
 public class Patterns {
     //Hollow Rectangle
     public static void hollowRectangle(int n, int m) {
+        System.out.println("Hollow Rectangle");
         for(int i=1; i<=n; i++) {
             for(int j=1; j<=m; j++) {
                 if(i == 1 || j == 1 || i == n || j == m) {
@@ -11,9 +12,11 @@ public class Patterns {
             }
             System.out.println();
         }
+        
     }
 
     public static void inverted_rotated_halfPyramid(int n) {
+        System.out.println("Inverted Rotated Half Pyramid");
         for(int i=1; i<=n; i++) {
             //spaces
             for(int j=1; j<=n-i; j++) {
@@ -28,6 +31,7 @@ public class Patterns {
     }
 
     public static void inverted_halfPyramid_withNumbers(int n) {
+        System.out.println("Inverted Half Pyramid with Numbers");
         for(int i=1; i<=n; i++) {
             //numbers
             for(int j=1; j<=n-i+1; j++) {
@@ -39,6 +43,7 @@ public class Patterns {
     }
 
     public static void floyds_triangle(int n) {
+        System.out.println("Floyd's Triangle");
         int number = 1;
         for(int i=1; i<=n; i++) {
             //numbers
@@ -52,6 +57,7 @@ public class Patterns {
     }
 
     public static void zero_one_triangle(int n) {
+        System.out.println("Zero One Triangle");
         for(int i=1; i<=n; i++) {
             //binary bits
             for(int j=1; j<=i; j++) {
@@ -66,6 +72,7 @@ public class Patterns {
     }
 
     public static void butterfly(int n) {
+        System.out.println("Butterfly");
         //1st half
         for(int i=1; i<=n; i++) {
             //stars
@@ -108,6 +115,7 @@ public class Patterns {
     }
 
     public static void solid_rhombus(int n) {
+        System.out.println("Solid Rhombus");
         for(int i=1; i<=n; i++) {
             //spaces
             for(int j=1; j<=n-i; j++) {
@@ -124,6 +132,7 @@ public class Patterns {
     }
 
     public static void hollow_rhombus(int n) {
+        System.out.println("Hollow Rhombus");
         for(int i=1; i<=n; i++) {
             //spaces
             for(int j=1; j<=n-i; j++) {
@@ -144,6 +153,7 @@ public class Patterns {
     }
 
     public static void diamond(int n) {
+        System.out.println("Diamond");
         //1st half
         for(int i=1; i<=n; i++) {
             //spaces
@@ -174,6 +184,7 @@ public class Patterns {
     }
 
     public static void number_pyramid(int n) {
+        System.out.println("Number Pyramid");
         for(int i=1; i<=n; i++) {
             //spaces
             for(int j=1; j<=n-i; j++) {
@@ -190,6 +201,7 @@ public class Patterns {
     }
 
     public static void palindromic_pattern_withNumbers(int n) {
+        System.out.println("Palindromic Pattern with Numbers");
         for(int i=1; i<=n; i++) {
             //spaces
             for(int j=1; j<=n-i; j++) {
@@ -213,15 +225,25 @@ public class Patterns {
 
     public static void main(String args[]) {
         hollowRectangle(4, 5);
+        System.out.println("\n");
         inverted_rotated_halfPyramid(4);
+        System.out.println("\n");
         inverted_halfPyramid_withNumbers(5);
+        System.out.println("\n");
         floyds_triangle(5);
+        System.out.println("\n");
         zero_one_triangle(5);
+        System.out.println("\n");
         butterfly(4);
+        System.out.println("\n");
         solid_rhombus(5);
+        System.out.println("\n");
         hollow_rhombus(5);
+        System.out.println("\n");
         diamond(4);
+        System.out.println("\n");
         number_pyramid(5);
+        System.out.println("\n");
         palindromic_pattern_withNumbers(5);
     }
 }
